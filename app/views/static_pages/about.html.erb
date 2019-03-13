@@ -1,0 +1,17 @@
+<% provide(:title, "About") %>
+
+<h1>We are the Number one phone shop online!</h1>
+<p>For years we have been providing you with quality, low price phones!</p>
+<p>We've now taken the internet by storm</p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#p1").hover(function(){
+    alert("Call us on 0866051111");
+  },
+  function(){
+    alert("Just in case you missed it 0866051111 ");
+  }); 
+});
+</script>
+<p id="p1"><%= image_tag("map.jpg", alt: "Location of Shop", :class => "welcomeIm") %></p>
